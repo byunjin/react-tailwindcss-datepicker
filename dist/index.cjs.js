@@ -1573,22 +1573,25 @@ const Input = (e) => {
         const button = buttonRef?.current;
         function focusInput(e) {
             e.stopPropagation();
-            const input = inputRef.current;
-            if (input) {
-                input.focus();
-                if (inputText) {
-                    changeInputText("");
-                    if (dayHover) {
-                        changeDayHover(null);
-                    }
-                    if (period.start && period.end) {
-                        changeDatepickerValue({
-                            startDate: null,
-                            endDate: null
-                        }, input);
-                    }
-                }
-            }
+            // const input = inputRef.current;
+            // if (input) {
+            //     input.focus();
+            //     if (inputText) {
+            //         changeInputText("");
+            //         if (dayHover) {
+            //             changeDayHover(null);
+            //         }
+            //         if (period.start && period.end) {
+            //             changeDatepickerValue(
+            //                 {
+            //                     startDate: null,
+            //                     endDate: null
+            //                 },
+            //                 input
+            //             );
+            //         }
+            //     }
+            // }
         }
         if (button) {
             button.addEventListener("click", focusInput);
