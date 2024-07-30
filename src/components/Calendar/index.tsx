@@ -132,14 +132,15 @@ const Calendar: React.FC<Props> = ({
                 hideDatepicker();
             }
 
+            //의심
             if (period.start && period.end) {
-                if (changeDayHover) {
-                    changeDayHover(null);
-                }
-                changePeriod({
-                    start: null,
-                    end: null
-                });
+                // if (changeDayHover) {
+                //     changeDayHover(null);
+                // }
+                // changePeriod({
+                //     start: null,
+                //     end: null
+                // });
             }
 
             if ((!period.start && !period.end) || (period.start && period.end)) {

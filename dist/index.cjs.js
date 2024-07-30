@@ -1317,15 +1317,8 @@ const Calendar = ({ date, minDate, maxDate, onClickPrevious, onClickNext, change
             }, ipt);
             hideDatepicker();
         }
-        if (period.start && period.end) {
-            if (changeDayHover) {
-                changeDayHover(null);
-            }
-            changePeriod({
-                start: null,
-                end: null
-            });
-        }
+        //의심
+        if (period.start && period.end) ;
         if ((!period.start && !period.end) || (period.start && period.end)) {
             if (!period.start && !period.end) {
                 changeDayHover(fullDay);
@@ -1573,25 +1566,26 @@ const Input = (e) => {
         const button = buttonRef?.current;
         function focusInput(e) {
             e.stopPropagation();
-            // const input = inputRef.current;
-            // if (input) {
-            //     input.focus();
-            //     if (inputText) {
-            //         changeInputText("");
-            //         if (dayHover) {
-            //             changeDayHover(null);
-            //         }
-            //         if (period.start && period.end) {
-            //             changeDatepickerValue(
-            //                 {
-            //                     startDate: null,
-            //                     endDate: null
-            //                 },
-            //                 input
-            //             );
-            //         }
-            //     }
-            // }
+            //의심
+            const input = inputRef.current;
+            if (input) {
+                input.focus();
+                // if (inputText) {
+                //     changeInputText("");
+                //     if (dayHover) {
+                //         changeDayHover(null);
+                //     }
+                //     if (period.start && period.end) {
+                //         changeDatepickerValue(
+                //             {
+                //                 startDate: null,
+                //                 endDate: null
+                //             },
+                //             input
+                //         );
+                //     }
+                // }
+            }
         }
         if (button) {
             button.addEventListener("click", focusInput);
