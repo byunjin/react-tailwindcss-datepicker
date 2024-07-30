@@ -6,3 +6,5 @@ assets/
 
 # Files
 README.md
+.prettierrc
+package-lock.json
