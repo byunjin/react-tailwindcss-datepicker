@@ -221,6 +221,7 @@ const Input: React.FC<Props> = (e: Props) => {
         const input = inputRef.current;
         const arrow = arrowContainer?.current;
 
+        //여기가 병신같이 그려주는부분인듯
         function showCalendarContainer() {
             if (arrow && div && div.classList.contains("hidden")) {
                 div.classList.remove("hidden");
