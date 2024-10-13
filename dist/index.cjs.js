@@ -911,7 +911,7 @@ const DoubleChevronRightIcon = ({ className = "w-6 h-6" }) => {
 };
 // eslint-disable-next-line react/display-name,@typescript-eslint/ban-types
 const Arrow = React__default["default"].forwardRef((props, ref) => {
-    return (React__default["default"].createElement("div", { ref: ref, className: "absolute top-[2px] z-20 h-3 w-3 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-gray-300 bg-white dark:bg-slate-800 dark:border-slate-600" }));
+    return (React__default["default"].createElement("div", { ref: ref, className: "absolute z-20 h-3 w-3 rotate-45 mt-0.5 ml-[1.2rem] border-l border-t border-transparent bg-transparent dark:bg-transparent dark:border-transparent" }));
 });
 const SecondaryButton = ({ children, onClick, disabled = false }) => {
     // Contexts
@@ -2059,7 +2059,7 @@ const Datepicker = ({ primaryColor = "blue", value = null, onChange, useRange = 
     return (React__default["default"].createElement(DatepickerContext.Provider, { value: contextValues },
         React__default["default"].createElement("div", { className: containerClassNameOverload, ref: containerRef },
             React__default["default"].createElement(Input, { setContextRef: setInputRef }),
-            React__default["default"].createElement("div", { className: "transition-all ease-out duration-300 absolute z-10 mt-[5px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden", ref: calendarContainerRef },
+            React__default["default"].createElement("div", { className: "transition-all ease-out duration-300 absolute z-10 mt-[1px] text-sm lg:text-xs 2xl:text-sm translate-y-4 opacity-0 hidden", ref: calendarContainerRef },
                 React__default["default"].createElement(Arrow, { ref: arrowRef }),
                 React__default["default"].createElement("div", { className: "mt-2.5 shadow-sm border border-gray-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg" },
                     React__default["default"].createElement("div", { className: "flex flex-col lg:flex-row py-2" },
